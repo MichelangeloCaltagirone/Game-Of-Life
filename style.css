@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Generals */
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Grid style */
+
+#gameContainer {                   /* The Grid */
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin-top: 4rem;
+    
+    li {                           /* The Cell */
+        width: 30px;
+        height: 30px;
+        border: 1px solid grey;
+    }
+}
+
+
+/* Indici  */
+
+.axis {                               
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+.x-axis, .y-axis {
+    position: absolute;
+}
+.x-axis {                       /* di Colonna */
+    display: flex;
+    top: -25px;
+    left: 0;    
+    li {
+        flex-basis: 30px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+}
+.y-axis {                       /* di Riga */
+    left: -25px;
+    top: 0;
+    li {
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+
+/* Futuri button di controllo */
+
+#btn-control {
+    text-align: center;
+}
+button {
+    margin: 1rem 2rem;
+    padding: 5px 10px;
+}
+
+
+/* Rappresentazione visiva dello Stato delle Celle(<li>) a cui verranno aggiunte le seguenti classi */
+
+.alive {
+    background-color: rgb(171, 98, 98);
+}
+.dead {
+    background-color: black;
+}

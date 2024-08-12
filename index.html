@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Of Life</title>
+</head>
+<body>    
+    <main>
+
+        <div class="axis">  <!-- div abbastanza inutile, serve solo per appenderci gli Indici-->
+
+            <ul id="gameContainer"></ul>  <!-- Where the magic appens -->
+
+            <ul class="x-axis">           <!-- Indici di colonna. Indica gli indici degli array -->
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+            </ul>
+            <ul class="y-axis">           <!-- Indici di riga. Indica gli indici degli array -->
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+            </ul>
+
+        </div>      
+        
+        <!-- Futuri button per controllo flusso di gioco -->
+        <div id="btn-control">
+            <button type="button">Start</button>
+            <button type="button">Pause</button>
+            <button type="button">Reset</button>
+        </div>
+             
+    </main>  
+
+    <script src="script.js"></script>
+</body>
+</html>
