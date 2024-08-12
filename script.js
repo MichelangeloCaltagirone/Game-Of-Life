@@ -131,7 +131,9 @@ function nextGen() {      // Si genera la Generazione successiva
             nextGrid[i][j] = godzilla(sum, i, j);
             console.log(nextGrid[i][j], ':cella nextGrid dopo rules');                       // £          
         } 
-    } return nextGrid;
+    }
+    console.log('griglia nuova finiti i cicli ma prima di return', nextGrid);                // £
+    return nextGrid;
 }  
 /*
 Nella funzione nextGen, per fetchare escludendo fin da subito i bordi (che non hanno tutti i vicini,
